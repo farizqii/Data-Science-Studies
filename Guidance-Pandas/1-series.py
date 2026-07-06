@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import string
 
 # Series = A Pandas 1-Dimensional Array that can hold any data type

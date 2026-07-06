@@ -39,7 +39,7 @@ print(str(inventory_df) + '\n')
 print("Display The First 3 Rows:")
 print('\n' + str(inventory_df.head(3)) + '\n')
 
-print("Display The Quick Summary:")
+print("Display The Quick Summary:") 
 inventory_df.info()
 
 print("Extract Title Column:")
