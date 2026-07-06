@@ -13,7 +13,3 @@ ff_pokemon = df[(df["Type1"] == "Fire") & (df["Type2"] == "Flying")]
 
 
 print(ff_pokemon)
-
-# git add .
-# git commit -m "Added Filtering"
-# git push origin main
