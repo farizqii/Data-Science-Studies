@@ -74,3 +74,15 @@
 # Tools to be used:
 # pd.to_datetime(), df.shift(), df.quantile(), df.duplicated(), df.drop_duplicates(), df.corr(),
 # df.groupby().transform(), pd.cut(), and df.rolling(window=3).mean()
+
+import pandas as pd  # type: ignore
+import string
+df = pd.read_csv(r".\Datas\ProjectTitan.csv")
+
+# PHASE 1
+# Strip and Cast
+df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+# Chronological Imputation
+findall = df.shift(periods=1, freq=None, axis=0, fill_value=None)
+
+print(findall)
